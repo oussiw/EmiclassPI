@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"/>
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+</head>
+
+<body>
+	<h1>Bienvenue à EmiClass</h1>
+	
+	
+	<form th:action="@{/users/info}" th:object="${user}" method="get">
+		<label>Veuillez saisir votre matricule:</label>
+		<input type="number" id="matricule" name="matricule" placeholder="Matricule" autofocus="autofocus" required/> <br>
+		
+		<input type="submit" value="Confirmer"/>
+	</form>
+	
+</body>
+</html>
